@@ -14,3 +14,26 @@ int main() {
 
     return 0;
 }
+
+
+// Write a program that asks for your first name, last name and then prints the names in the format last, first. Assignment.
+
+include <stdio.h>
+
+int main(void) {
+    char firstName[50];  
+    char lastName[50];   
+
+    // Prompt user for their first name
+    printf("Enter your first name: ");
+    scanf("%49s", firstName); 
+
+    // Prompt user for their last name
+    printf("Enter your last name: ");
+    scanf("%49s", lastName);  
+
+    // Print the names in the format: last, first
+    printf("%s, %s\n", lastName, firstName);
+
+    return 0;
+}
