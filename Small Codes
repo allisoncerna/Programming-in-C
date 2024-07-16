@@ -37,3 +37,25 @@ int main(void) {
 
     return 0;
 }
+
+
+//inch convertor
+#include <stdio.h>
+
+int main() {
+    double inches, centimeters;
+    const double CM_PER_INCH = 2.54; // Conversion factor
+
+    // Prompt user to enter height in inches
+    printf("Enter your height in inches: ");
+    scanf("%lf", &inches);
+
+    // Convert inches to cm
+    centimeters = inches * CM_PER_INCH;
+
+    // Display height in cm
+    printf("Your height in centimeters is: %.2f cm\n", centimeters);
+
+    return 0;
+}
+
