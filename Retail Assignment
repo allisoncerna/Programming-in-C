@@ -1,0 +1,25 @@
+//write a program to ask a user for number of visitors/customers for 7 days of the week (for one week)
+
+#include <stdio.h>
+#define MAX_DAYS 7
+int main() {
+    int visitors[MAX_DAYS];
+    int totalVisitors = 0;
+
+    printf("Enter the number of visitors for each day:\n");
+
+    for (int i = 0; i < MAX_DAYS; i++) {
+        printf("Day %d: ", i + 1);
+        scanf("%d", &visitors[i]);
+        totalVisitors += visitors[i];
+    }
+
+    printf("\nNumber of visitors for each day:\n");
+    for (int i = 0; i < MAX_DAYS; i++) {
+        printf("Day %d: %d visitors\n", i + 1, visitors[i]);
+    }
+
+    printf("\nTotal number of visitors in %d days: %d\n", MAX_DAYS, totalVisitors);
+
+    return 0;
+}
