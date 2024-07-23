@@ -1,3 +1,35 @@
+//Write a program to display “90-100” for grade A, “80-89” for grade B and “70-79” for grade C. Utilize switch statements.
+#include <stdio.h>
+
+int main() {
+    char grade;
+
+    // Prompts user to enter a grade
+    printf("Enter the grade (A, B, or C): ");
+    scanf(" %c", &grade);
+
+    // Use switch statement (requirement)
+    switch (grade) {
+        case 'A':
+            printf("90-100\n");
+            break;
+        case 'B':
+            printf("80-89\n");
+            break;
+        case 'C':
+            printf("70-79\n");
+            break;
+        default:
+            printf("Invalid grade entered. Please enter A, B, or C.\n");
+            break;
+    }
+
+    return 0;
+}
+
+
+
+
 // Fix this classmates code
 
 #include <stdio.h>
