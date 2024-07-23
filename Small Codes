@@ -1,3 +1,55 @@
+// Fix this classmates code
+
+#include <stdio.h>
+#include <string.h>
+int main(void){
+    int people_each_day[7];
+   
+
+    for(int i = 0; i < 7;i++){
+        printf("how many people are present on Day %d\n",i);
+        scanf("%d", &people);
+        people_each_day[i] = people;
+    }
+    for(int i = 0; i< 7;i++){
+        printf("Day %d: %d people",i,people_each_day[i]);
+    }
+
+
+    return 0;
+}
+
+//The fixed version
+
+#include <stdio.h>
+#include <string.h>
+
+int main(void){
+    int people_each_day[7];
+    int total_visitors = 0; // variable to keep track of visitors (total)
+    int people; // variable to store input (days)
+
+    for(int i = 0; i < 7;i++){
+        printf("how many people are present on Day %d\n",i+1);
+        scanf("%d", &people);
+        people_each_day[i] = people;
+        total_visitors += people; // Add the number of people to the total
+    }
+    for(int i = 0; i< 7;i++){
+         printf("Day %d: %d people\n", i + 1, people_each_day[i]);
+    }
+
+    // Print the total number of visitors for the week
+    printf("\nTotal number of visitors for the week: %d\n", total_visitors);
+
+    
+    return 0;
+}
+
+
+
+
+//class assignment
 #include <stdio.h>
 
 int main() {
