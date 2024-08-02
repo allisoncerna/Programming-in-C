@@ -1,3 +1,30 @@
+//assign values of current element in the array to the next element. Repeat the process until it is second to last element. Assign the value of the last element to the first element.
+
+#include <stdio.h>
+
+int main(void) {
+    float prices[5] = {1.5, 2.5, 3.5, 4.5, 5.5};
+
+    // Rotate the array to the right by one position
+    float last = prices[4];
+    for (int i = 4; i > 0; i--) {
+        prices[i] = prices[i - 1];
+    }
+    prices[0] = last;
+
+    // Print array
+    for (int i = 0; i < 5; i++) {
+        printf("%.1f\n", prices[i]);
+      
+    }
+    printf("\n");
+
+    return 0;
+}
+
+//expected output 5.5, 1.5, 2.5, 3.5, 4.5
+
+
 //Write a program to display “90-100” for grade A, “80-89” for grade B and “70-79” for grade C. Utilize switch statements.
 #include <stdio.h>
 
